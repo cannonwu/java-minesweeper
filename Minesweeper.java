@@ -20,9 +20,6 @@ public class Minesweeper {
      * @param rows     The number of rows in the Minesweeper grid
      * @param columns  The number of columns in the Minesweeper grid
      *
-     * Tip: Create Minesweeper grid with 2 extra rows and 2 extra columns
-     *      This will make it easy to go around the grid eliminating
-     *      the need for ArrayOutOfBounds checking at the edges.
      */
     public static void initGrid(int rows, int columns) {					//create grid of user-inputed length and width
         grid = new Cell[rows + 2][columns + 2];
@@ -132,9 +129,6 @@ public class Minesweeper {
      * adjacent cells have mines, or, a number representing the number 
      * of adjcent cells with mines.
      *
-     * Extra Credit: Reveal surrounding cells until encountering a cell 
-     *               with non-zero adjacent mines 
-     *
      * @param   row    Row of the user selected cell
      * @param   column Column of the user selected cell
      * @return  an integer indicating if the game is won, lost or not-over
@@ -185,7 +179,6 @@ public class Minesweeper {
 		return variable;
     }
 
-    /* Add other static methods as necessary */
     /* public int nextInt(int n) {
 		int range = (max - min) + 1;
 		return (int)(Math.random() * range);

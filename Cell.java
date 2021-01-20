@@ -8,9 +8,6 @@ public class Cell {
     public static final char HIDDEN_CELL = '#';
     public static final char[] NUM_ADJ_MINES = {'.','1','2','3','4','5','6','7','8'};
     
-    /* Add or remove constants, instance variables and instance methods 
-     * as necessary. 
-     */
     private boolean mine;
     private boolean revealed;
     private int numAdjacentMines;
